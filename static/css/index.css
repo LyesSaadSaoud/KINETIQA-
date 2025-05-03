@@ -338,15 +338,13 @@ a:hover:after{
   color: white;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
 }
-a.button:after,
-.button span:after {
-  content: none !important;
-  background: transparent !important;
-  display: none !important;
-}
-
-
-
 .header a{
   color:white;
+}
+.carousel-img {
+  max-width: 70%;   /* Adjust this percentage to control the size */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
