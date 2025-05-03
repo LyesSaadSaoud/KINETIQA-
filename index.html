@@ -32,7 +32,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-  <style>
+ <style>
 /* Removes yellow autofill background in Chrome/Safari */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
@@ -45,7 +45,7 @@ select:-webkit-autofill,
 
 /* Override any persistent outline or highlight */
 .author-block a {
-  color: #3273dc !important;         /* Bulma blue */
+  color: #3273dc !important;         
   background-color: transparent !important;
   text-decoration: none;
   box-shadow: none !important;
@@ -57,10 +57,20 @@ select:-webkit-autofill,
 .author-block a:hover {
   color: #276cda !important;
   background-color: transparent !important;
-  text-decoration: underline; /* Optional */
+  text-decoration: underline;
+  box-shadow: none !important;
+}
+
+/* This final rule removes hover background flickers completely */
+.author-block a:focus,
+.author-block a:hover,
+.author-block a:active {
+  background-color: transparent !important;
+  outline: none !important;
   box-shadow: none !important;
 }
 </style>
+
 
 
 </head>
