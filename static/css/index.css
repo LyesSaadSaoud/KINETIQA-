@@ -338,6 +338,13 @@ a:hover:after{
   color: white;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
 }
+.button a:after,
+.button:after {
+  background-color: transparent !important;
+  content: none !important;
+  display: none !important;
+}
+
 
 .header a{
   color:white;
